@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
   background-color: #007700; /* Green color resembling a casino table */
   display: flex;
@@ -19,6 +21,7 @@ body {
   justify-content: space-around;
   align-items: center;
   font-size: 2rem;
+  background-color: white; /* Set background color to white */
 }
 
 .suit {
