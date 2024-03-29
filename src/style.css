@@ -1,5 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+body {
+  background-color: #007700; /* Green color resembling a casino table */
+}
+
 .card {
   width: 200px;
   height: 300px;
