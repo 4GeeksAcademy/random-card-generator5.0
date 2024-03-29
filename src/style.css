@@ -1,7 +1,13 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-
 body {
   background-color: #007700; /* Green color resembling a casino table */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the entire viewport height is covered */
+}
+
+.card-container {
+  text-align: center;
 }
 
 .card {
@@ -17,4 +23,5 @@ body {
 
 .suit {
   font-size: 3rem;
+  color: red; /* Make hearts and diamonds symbols red */
 }

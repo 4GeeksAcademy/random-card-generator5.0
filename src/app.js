@@ -2,7 +2,6 @@
 import "bootstrap";
 import "./style.css";
 
-// Define suits and values for the cards
 const suits = ["♠", "♥", "♦", "♣"];
 const values = [
   "2",
@@ -20,7 +19,6 @@ const values = [
   "A"
 ];
 
-// Function to generate a random card
 function generateRandomCard() {
   const randomSuitIndex = Math.floor(Math.random() * suits.length);
   const randomValueIndex = Math.floor(Math.random() * values.length);
@@ -29,7 +27,10 @@ function generateRandomCard() {
   const value = values[randomValueIndex];
 
   // Update the HTML to display the random card
-  document.getElementById("suit").textContent = suit;
+  const suitElement = document.getElementById("suit");
+  suitElement.textContent = suit;
+  suitElement.style.color = suit === "♥" || suit === "♦" ? "red" : "black"; // Make hearts and diamonds red
+
   document.getElementById("value").textContent = value;
 }
 
